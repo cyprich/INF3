@@ -8,19 +8,24 @@ void Zoznam::Usporiadaj(const char* menoVstupnehoSuboru)
 
 	DataTyp  nacitanaHodnota = citac.Citaj();
 
-	while (nacitanaHodnota != NEPLATNA_HODNOTA) {
-		if (zaciatok != nullptr) {
+	while (nacitanaHodnota != NEPLATNA_HODNOTA)
+	{
+		if (zaciatok != nullptr)
+		{
 			Data* predchodca = nullptr;
 			Data* aktualnyPrvok;
 
-			for (Data* aktualnyPrvok = zaciatok; aktualnyPrvok != nullptr; aktualnyPrvok = aktualnyPrvok->Dalsi()) {
+			for (Data* aktualnyPrvok = zaciatok; aktualnyPrvok != nullptr; aktualnyPrvok = aktualnyPrvok->Dalsi())
+			{
 				DataTyp aktualnaHodnota = aktualnyPrvok->Hodnota();
 
-				if (nacitanaHodnota < aktualnaHodnota) {
-					if (predchodca != nullptr) {
+				if (nacitanaHodnota < aktualnaHodnota)
+				{
+					if (predchodca != nullptr)
+					{
 						predchodca->Dalsi(new Data(nacitanaHodnota, aktualnyPrvok));
-					}
-					else {
+					} else
+					{
 						zaciatok = new Data(nacitanaHodnota, aktualnyPrvok);
 					}
 
@@ -30,11 +35,12 @@ void Zoznam::Usporiadaj(const char* menoVstupnehoSuboru)
 				predchodca = aktualnyPrvok;
 			}
 
-			if (aktualnyPrvok == nullptr) {
+			if (aktualnyPrvok == nullptr)
+			{
 				predchodca->Dalsi(new Data(nacitanaHodnota, aktualnyPrvok));
 			}
-		}
-		else {
+		} else
+		{
 			zaciatok = new Data(nacitanaHodnota, nullptr);
 		}
 
