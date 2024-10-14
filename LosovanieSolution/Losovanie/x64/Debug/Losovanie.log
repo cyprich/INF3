@@ -1,5 +1,0 @@
-﻿  loteria.c
-  main.c
-C:\Users\cyprich\source\repos\LosovanieSolution\Losovanie\main.c(33,4): warning C4013: 'TahLoterie' undefined; assuming extern returning int
-  Generating Code...
-  Losovanie.vcxproj -> C:\Users\cyprich\source\repos\LosovanieSolution\x64\Debug\Losovanie.exe
