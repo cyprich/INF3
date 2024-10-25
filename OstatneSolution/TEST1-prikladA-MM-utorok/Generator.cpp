@@ -13,6 +13,8 @@ Generator::Generator()
 Generator::~Generator()
 {
 	delete[] pole;
+	pole = nullptr;
+	velkost_pola = 0;
 }
 
 int Generator::generuj_cislo(int min, int max)
