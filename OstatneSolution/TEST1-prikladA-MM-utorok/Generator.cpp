@@ -27,19 +27,6 @@ int Generator::generuj_cislo(int limit)
 	return generuj_cislo(1, limit);
 }
 
-int* Generator::generuj_zoznam(int min, int max, int pocet_prvkov)
-{
-	pole = new int[pocet_prvkov];
-	velkost_pola = pocet_prvkov;
-
-	for (int i = 0; i < velkost_pola; i++)
-	{
-		pole[i] = generuj_cislo(min, max);
-	}
-
-	return pole;
-}
-
 void Generator::vypis_zoznam()
 {
 	if (pole == nullptr || velkost_pola == 0) {

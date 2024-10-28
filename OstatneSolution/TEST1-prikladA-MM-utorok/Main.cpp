@@ -8,8 +8,6 @@ void vymen(int& a, int& b);
 
 int main(int argc, char* argv[])
 {
-	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
-
 	// kontrola poctu parametrov
 	if (argc < 4)
 	{
@@ -49,9 +47,9 @@ int main(int argc, char* argv[])
 	vymen(pole[index1], pole[index2]);
 	generator->vypis_zoznam();
 
-
 	delete generator;
 
+	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 	return 0;
 }
 

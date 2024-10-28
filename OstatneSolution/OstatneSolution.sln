@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "uloha3zmoodlu", "uloha3zmoo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TEST1-prikladA-MM-utorok", "TEST1-prikladA-MM-utorok\TEST1-prikladA-MM-utorok.vcxproj", "{6DF6B50A-CA5C-4933-91DD-E630B6B35ADE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TEST1_dalsipokus", "TEST1_dalsipokus\TEST1_dalsipokus.vcxproj", "{750BB678-A6FD-4538-956B-F2E8E166DA10}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{6DF6B50A-CA5C-4933-91DD-E630B6B35ADE}.Release|x64.Build.0 = Release|x64
 		{6DF6B50A-CA5C-4933-91DD-E630B6B35ADE}.Release|x86.ActiveCfg = Release|Win32
 		{6DF6B50A-CA5C-4933-91DD-E630B6B35ADE}.Release|x86.Build.0 = Release|Win32
+		{750BB678-A6FD-4538-956B-F2E8E166DA10}.Debug|x64.ActiveCfg = Debug|x64
+		{750BB678-A6FD-4538-956B-F2E8E166DA10}.Debug|x64.Build.0 = Debug|x64
+		{750BB678-A6FD-4538-956B-F2E8E166DA10}.Debug|x86.ActiveCfg = Debug|Win32
+		{750BB678-A6FD-4538-956B-F2E8E166DA10}.Debug|x86.Build.0 = Debug|Win32
+		{750BB678-A6FD-4538-956B-F2E8E166DA10}.Release|x64.ActiveCfg = Release|x64
+		{750BB678-A6FD-4538-956B-F2E8E166DA10}.Release|x64.Build.0 = Release|x64
+		{750BB678-A6FD-4538-956B-F2E8E166DA10}.Release|x86.ActiveCfg = Release|Win32
+		{750BB678-A6FD-4538-956B-F2E8E166DA10}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
