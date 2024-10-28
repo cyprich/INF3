@@ -40,7 +40,8 @@ int main(int argc, char* argv[])
 	}
 	std::cout << std::endl << std::endl;
 
-
+	// uvolnenie pamate
+	delete generator;
 
 	return 0;
 }
