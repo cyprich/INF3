@@ -6,6 +6,8 @@
 int main() {
 	Zoznam triedic;
 	triedic.Usporiadaj("data.in");
+	triedic.Vypis();
+	triedic.Uloz("data.out");
 
 	return 0;
 }

@@ -8,4 +8,6 @@ private:
 	
 public:
 	void Usporiadaj(const char* menoSuboru);
+	void Uloz(const char* menoVystupnehoSuboru);
+	void Vypis()
 };

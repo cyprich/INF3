@@ -47,3 +47,21 @@ void Zoznam::Usporiadaj(const char* menoVstupnehoSuboru)
 		nacitanaHodnota = citac.Citaj();
 	}
 }
+
+void Zoznam::Uloz(const char* menoVystupnehoSuboru)
+{
+	Vystup zapisovac(menoVystupnehoSuboru);
+	Data* prvok = zaciatok;
+	
+	while (prvok != nullptr)
+	{
+		zapisovac.Zapis(prvok->Hodnota);
+		prvok = prvok->Dalsi();
+
+	}
+}
+
+void Zoznam::Vypis()
+{
+	Uloz(nullptr);
+}
