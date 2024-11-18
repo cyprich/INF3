@@ -4,7 +4,7 @@ unsigned char* KopirujText(const unsigned char* zdroj)
 {
 	int dlzka = strlen((char*)zdroj);
 	unsigned char* ciel(new unsigned char[dlzka + 1]);
-	strcpy((char*)ciel, (char*)zdroj;
+	strcpy((char*)ciel, (char*)zdroj);
 	return ciel;
 }
 

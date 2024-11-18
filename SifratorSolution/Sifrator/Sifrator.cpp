@@ -1,5 +1,9 @@
 #include "Sifrator.h"
 #include "Helper.h"
+#include "Help.h"
+#include "Vstup.h"
+#include "Vystup.h"
+#include "Koder.h"
 #include <cctype>
 #include <cstring>
 
@@ -39,4 +43,29 @@ Sifrator::Sifrator(unsigned int pPocetParametrov, const char* pParametre[])
 
 void Sifrator::Start()
 {
+	if (cinnost == 'h')
+	{
+		Help().Napoveda();
+	} else
+	{
+		unsigned char* zdrojText = Vstup().Citaj(nazovVstupnySubor);
+		if (zdrojText)
+		{
+			unsigned char* zasifrovanyText = cinnost == 's' ? Koder().Koduj(heslo, zdrojText) : Koder().Dekoduj(heslo, zdrojText);
+			if (zasifrovanyText != nullptr)
+			{
+				if (konzola)
+				{
+					Vystup().VystupKonzola(zasifrovanyText);
+				} else
+				{
+					Vystup().VystupSubor(nazovVystupnySubor, zasifrovanyText);
+				}
+				// dealokuj zasifrovany text
+				// delete[] zasifrovanyText;
+			}
+			// dealokuj zdrojovy text
+			// delete[] zdrojText;
+		}
+	}
 }

@@ -7,5 +7,5 @@
 /// </summary>
 /// <param name="zdroj"></param>
 /// <returns></returns>
-unsigned char* KopirujText(const unsigned char* zdroj);
+unsigned char* KopirujText(const char* zdroj);
 unsigned char* KopirujText(char* zdroj);
