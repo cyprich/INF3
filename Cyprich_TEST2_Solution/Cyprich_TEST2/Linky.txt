@@ -1,0 +1,3 @@
+FR4787 Ryanair 321 100 5
+SK0001 Slovaktravel 500 120 7
+SK0002 Slovaktravel 777 200 20
