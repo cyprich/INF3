@@ -1,0 +1,4 @@
+klub1 slovensko 10
+klub2 anglicko 11
+klub3 madarsko 9
+klub4 kualalumpur 150
